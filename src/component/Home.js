@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <div className="home">
-     <section className="d-flex align-items-center mt-lg-5">
+     <section className="d-flex align-items-center ">
      <div className="container-fluid nav_bg">
      <div className="row">
      <div className="col-10 mx-auto">
@@ -21,8 +21,8 @@ function Home() {
      <div className="row">
 
       <div ref={homeText} className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
-      <h1>Grow Your Business with <strong className="brand-name">IMPRESSION</strong> </h1>
-      <h6 className="my-3" >
+      <h2>Grow Your Business with  <strong className="brand-name">IMPRESSION</strong> </h2>
+      <h6 className="my-3 text-secondary" >
       We are the team of highly professional developers to make web and mobile applications with latest technologies </h6>
 
       <div className="mt-3" >

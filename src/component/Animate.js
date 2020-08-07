@@ -1,32 +1,32 @@
-import useWebAnimations, {fadeInRight, zoomIn} from "@wellyshen/use-web-animations";
+import useWebAnimations, { fadeInRight, zoomIn } from "@wellyshen/use-web-animations";
 
 
 
 
 export const HomeImg = () => {
 
-    
 
-    const { ref } = useWebAnimations({...fadeInRight});
+
+    const { ref } = useWebAnimations({ ...fadeInRight });
 
     const homeImg = ref;
 
-    
-return {homeImg};
-    
+
+    return { homeImg };
+
 
 };
 
 export const HomeText = () => {
 
-    
 
-    const  { ref } = useWebAnimations({...zoomIn});
+
+    const { ref } = useWebAnimations({ ...zoomIn });
 
     const homeText = ref;
 
-    
-return {homeText};
-    
+
+    return { homeText };
+
 
 };
