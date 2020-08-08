@@ -23,15 +23,15 @@ function Navbar() {
                 <NavLink exact activeClassName="active-menu" className="nav-link active" aria-current="page" to="/">Home</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink activeClassName="active-menu" className="nav-link" to="/service">Service's</NavLink>
+                <NavLink exact  activeClassName="active-menu" className="nav-link" to="/service">Service's</NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink activeClassName="active-menu" className="nav-link" to="/about">About</NavLink>
+                <NavLink exact  activeClassName="active-menu" className="nav-link" to="/about">About</NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink activeClassName="active-menu" className="nav-link" to="/contact">Contact</NavLink>
+                <NavLink exact  activeClassName="active-menu" className="nav-link" to="/contact">Contact</NavLink>
               </li>
              
              

@@ -28,7 +28,7 @@ function Card({image, title}) {
     <h5 className="card-title">{title}</h5>
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     
-    <div className="" >
+    <div className="card-btn" >
       <NavLink exact to="/service" className="btn-get-started nav-link">Go Somewhere</NavLink>
       </div>
     </div>
