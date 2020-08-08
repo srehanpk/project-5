@@ -31,7 +31,7 @@ function Navbar() {
               </li>
 
               <li className="nav-item">
-                <NavLink exact  activeClassName="active-menu" className="nav-link" to="/contact">Contact</NavLink>
+                <NavLink exact activeClassName="active-menu" className="nav-link" to="/contact">Contact</NavLink>
               </li>
              
              

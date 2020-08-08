@@ -1,7 +1,11 @@
-.App {
+.img-div {
   text-align: center;
-
 }
+h1, h5 {
+
+  text-align: center;
+}
+
 .home{
  
   /* background-color: rgb(240, 205, 240); */
@@ -53,6 +57,14 @@
  margin-top: 30px;
   
 }
+.contact-img{
+
+  height: 250px;
+  padding-top: 30px;
+}
+.contact{
+  text-align: center;
+}
 .card {
 
   height: 380px;
@@ -62,7 +74,7 @@
   color: #3498db;
 
 }
-.card-btn{
-
-  margin-bottom: 1px;
+.code {
+  width: 50vw;
+  height: 100px;
 }

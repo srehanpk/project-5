@@ -5,15 +5,13 @@ import "../../node_modules/bootstrap/dist/js/bootstrap.bundle";
 
 
 
-
-
-
-
 function Card({image, title}) {
 
-
+    
+    
 
   return (
+
     <>
    
 
@@ -21,7 +19,7 @@ function Card({image, title}) {
 
     <div className="col-lg-4 col-md-4 col-10 mx-auto">
 
-    <div className="card" >
+    <div className="card">
     <img src={image} className="card-img-top" alt="..."/>
    
     <div className="card-body">

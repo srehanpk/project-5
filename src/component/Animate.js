@@ -1,5 +1,15 @@
-import useWebAnimations, { fadeInRight, zoomIn } from "@wellyshen/use-web-animations";
+import useWebAnimations, { fadeInRight, slideInRight, zoomIn } from "@wellyshen/use-web-animations";
 
+
+export const CardAnimation =()=>{
+
+
+    const {ref} = useWebAnimations({slideInRight});
+
+    const anim = ref;
+
+    return {anim};
+};
 
 
 
@@ -30,3 +40,4 @@ export const HomeText = () => {
 
 
 };
+
