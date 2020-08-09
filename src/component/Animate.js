@@ -1,4 +1,4 @@
-import useWebAnimations, { fadeInRight, slideInRight, zoomIn } from "@wellyshen/use-web-animations";
+import useWebAnimations, { fadeInRight, shakeX, slideInRight, zoomIn } from "@wellyshen/use-web-animations";
 
 
 export const CardAnimation =()=>{
@@ -40,4 +40,16 @@ export const HomeText = () => {
 
 
 };
+export const ContactImg = () => {
 
+
+
+    const { ref, getAnimation } = useWebAnimations({ ...shakeX });
+
+    const conImg = ref;
+
+
+    return { conImg, getAnimation  };
+
+
+};
