@@ -11,19 +11,32 @@ function Contact() {
     fullName : "",
     mobile   : "",
     email    : "",
-    message  : "",
+    message  : ""
   });
   const { conImg, getAnimation } = ContactImg();
 
 
-  const InputEvent= (e) => {
+  const Input= (e) => {
     
     const {name, value} = e.target;
-
+    
+    setData((preData)=>{
+      
+      return {
+        ...preData, [name] : value,
+      }
+    })
   }
 
-  const formSubmit = () => {
+  const formSubmit = (e) => {
+      e.preventDefault();
 
+      alert(`      
+      Your Name: ${data.fullName} 
+      Mobile #: ${data.mobile} 
+      Your Email: ${data.email}
+      Your Message: ${data.message}
+            `)
 
   }
 
@@ -53,9 +66,9 @@ function Contact() {
                   type="text"
                   className="form-control"
                   id="exampleFormControlInput1"
-                  name="Full Name"
+                  name="fullName"
                   value={data.fullName}
-                  onChange={InputEvent}
+                  onChange={Input}
                   placeholder="Enter your name"
                 />
               </div>
@@ -65,9 +78,9 @@ function Contact() {
                   type="number"
                   className="form-control"
                   id="exampleFormControlInput1"
-                  name="Mobile #"
+                  name="mobile"
                   value={data.mobile}
-                  onChange={InputEvent}
+                  onChange={Input}
                   placeholder="Enter mobile number"
                 />
               </div>
@@ -77,9 +90,9 @@ function Contact() {
                   type="email"
                   className="form-control"
                   id="exampleFormControlInput1"
-                  name="Email"
+                  name="email"
                   value={data.email}
-                  onChange={InputEvent}
+                  onChange={Input}
                   placeholder="name@example.com"
                 />
               </div>
@@ -89,9 +102,9 @@ function Contact() {
                   className="form-control"
                   id="exampleFormControlTextarea1"
                   rows="3"
-                  name="Message"
+                  name="message"
                   value={data.message}
-                  onChange={InputEvent}
+                  onChange={Input}
                 ></textarea>
               </div>
 
