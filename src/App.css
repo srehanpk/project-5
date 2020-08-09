@@ -1,78 +1,66 @@
 .img-div {
   text-align: center;
 }
-h1, h5 {
-
+h1,
+h5 {
   text-align: center;
 }
+.footer {
+  margin-top: 10%;
+}
 
-.home{
- 
-  /* background-color: rgb(240, 205, 240); */
+.home {
   width: 100%;
-  height: 80vh;
   margin-top: 50px;
 }
 .navbar-brand img {
-
- width: 50px;
- height: 55px;
+  width: 50px;
+  height: 55px;
 }
 .navbar a:hover {
   color: #3498db !important;
-  
-} 
+}
 .active-menu {
-  
   font-size: 130% !important;
   color: #3498db !important;
   border-bottom: solid 1px red;
   font-weight: bold;
 }
 .btn-get-started {
-
   color: white;
   border: solid 1px #3498db;
   border-radius: 20px 20px 20px 20px;
   background-color: #3498db;
   width: max-content;
-  margin: auto; 
-  
+  margin: auto;
 }
 .btn-get-started:hover {
-  
   color: #3498db;
   background-color: white;
 }
 .brand-name {
   color: #3498db;
-  
 }
-.header-img{
- height: 300px;
- margin-top: 30px;
+.header-img {
+  height: 300px;
+  margin-top: 30px;
 }
 .about-img {
   height: 300px;
- margin-top: 30px;
-  
+  margin-top: 30px;
 }
-.contact-img{
-
+.contact-img {
   height: 250px;
-  padding-top: 30px;
+  padding: 30px;
 }
-.contact{
+.contact {
   text-align: center;
 }
 .card {
-
   height: 380px;
 }
 .card-title {
-
   color: #3498db;
-
 }
 .code {
   width: 50vw;

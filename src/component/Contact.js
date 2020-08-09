@@ -1,44 +1,39 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import images from "../png/contact.png";
 import { ContactImg } from "./Animate";
 
 function Contact() {
-
   const [data, setData] = useState({
-
-    fullName : "",
-    mobile   : "",
-    email    : "",
-    message  : ""
+    fullName: "",
+    mobile: "",
+    email: "",
+    message: "",
   });
   const { conImg, getAnimation } = ContactImg();
 
+  const Input = (e) => {
+    const { name, value } = e.target;
 
-  const Input= (e) => {
-    
-    const {name, value} = e.target;
-    
-    setData((preData)=>{
-      
+    setData((preData) => {
       return {
-        ...preData, [name] : value,
-      }
-    })
-  }
+        ...preData,
+        [name]: value,
+      };
+    });
+  };
 
   const formSubmit = (e) => {
-      e.preventDefault();
+    e.preventDefault();
 
-      alert(`      
+    alert(`      
       Your Name: ${data.fullName} 
       Mobile #: ${data.mobile} 
       Your Email: ${data.email}
       Your Message: ${data.message}
-            `)
-
-  }
+            `);
+  };
 
   return (
     <>
@@ -59,7 +54,7 @@ function Contact() {
       <div className="container contact-div">
         <div className="row">
           <div className="col-md-6 col-10 mx-auto">
-            <form onSubmit={formSubmit} >
+            <form onSubmit={formSubmit}>
               <div className="mb-3">
                 <label className="form-label">Full Name</label>
                 <input
@@ -108,7 +103,7 @@ function Contact() {
                 ></textarea>
               </div>
 
-              <div className="col-12">
+              <div className="col-12 my-5">
                 <button className="btn btn-outline-primary" type="submit">
                   Submit form
                 </button>

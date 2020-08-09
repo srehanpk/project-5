@@ -1,55 +1,37 @@
-import useWebAnimations, { fadeInRight, shakeX, slideInRight, zoomIn } from "@wellyshen/use-web-animations";
+import useWebAnimations, {
+  fadeInRight,
+  shakeX,
+  slideInRight,
+  zoomIn,
+} from "@wellyshen/use-web-animations";
 
+export const CardAnimation = () => {
+  const { ref } = useWebAnimations({ slideInRight });
 
-export const CardAnimation =()=>{
+  const anim = ref;
 
-
-    const {ref} = useWebAnimations({slideInRight});
-
-    const anim = ref;
-
-    return {anim};
+  return { anim };
 };
 
-
-
 export const HomeImg = () => {
+  const { ref } = useWebAnimations({ ...fadeInRight });
 
+  const homeImg = ref;
 
-
-    const { ref } = useWebAnimations({ ...fadeInRight });
-
-    const homeImg = ref;
-
-
-    return { homeImg };
-
-
+  return { homeImg };
 };
 
 export const HomeText = () => {
+  const { ref } = useWebAnimations({ ...zoomIn });
 
+  const homeText = ref;
 
-
-    const { ref } = useWebAnimations({ ...zoomIn });
-
-    const homeText = ref;
-
-
-    return { homeText };
-
-
+  return { homeText };
 };
 export const ContactImg = () => {
+  const { ref, getAnimation } = useWebAnimations({ ...shakeX });
 
+  const conImg = ref;
 
-
-    const { ref, getAnimation } = useWebAnimations({ ...shakeX });
-
-    const conImg = ref;
-
-
-    return { conImg, getAnimation  };
-
-
+  return { conImg, getAnimation };
 };
