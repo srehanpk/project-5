@@ -40,7 +40,7 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="col-lg-6 order-2 order-lg-2 img-div ">
+                <div className="col-lg-6 order-1 order-lg-2 img-div ">
                   <img
                     className="header-img"
                     ref={homeImg}
